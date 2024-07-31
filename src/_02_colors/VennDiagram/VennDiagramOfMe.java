@@ -1,6 +1,6 @@
 package _02_colors.VennDiagram;
 
-import processing.core.PApplet;
+import Processing.core.PApplet;
 
 public class VennDiagramOfMe extends PApplet {
 
