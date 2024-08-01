@@ -9,6 +9,7 @@ import java.io.File;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
+import javax.swing.JOptionPane;
 
 import org.jointheleague.graphical.robot.KeyboardAdapter;
 import org.jointheleague.graphical.robot.Robot;
@@ -32,8 +33,21 @@ public class RobotInSpace extends KeyboardAdapter {
 	private void moveRobot(int keyPressed) {
 		// 2. Print out the keyPressed variable and write down the numbers for
 		// each arrow key
+
 		
 		// 3. If the up arrow is pressed, move the Robot up the screen.
+		if (keyPressed==38) {
+			rob.move(20);
+		}
+		if (keyPressed==39) {
+			rob.turn(90);
+		}
+		if (keyPressed==40) {
+			rob.move(-20);
+		}
+		if (keyPressed==37) {
+			rob.turn(-90);
+		}
 		
 		// 4. If the down arrow is pressed, move the Robot down.
 		
